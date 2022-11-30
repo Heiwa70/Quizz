@@ -15,7 +15,7 @@
         android:text="Bienvenue dans QuizzApp 🔥"
         android:gravity="center"
         android:textStyle="bold"
-        android:textSize="28dp"
+        android:textSize="28sp"
         android:fontFamily="sans-serif-black"
          />
     <EditText
@@ -33,7 +33,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="16dp"
         android:text="Commencer la partie"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:backgroundTint="#393939"
         android:textColor="@color/white"
         android:textStyle="bold"
