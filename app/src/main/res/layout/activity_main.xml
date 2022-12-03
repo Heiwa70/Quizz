@@ -1,42 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginTop="12dp"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/main_textview_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Bienvenue dans QuizzApp 🔥"
-        android:gravity="center"
         android:textStyle="bold"
         android:textSize="28sp"
         android:fontFamily="sans-serif-black"
-         />
-    <EditText
-        android:id="@+id/main_edittext_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:hint="Entrer votre prénom 😄" />
+        android:gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
 
-    <Button
-        android:id="@+id/main_button_play"
+        />
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="16dp"
-        android:text="Commencer la partie"
-        android:textSize="20sp"
-        android:backgroundTint="#393939"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        />
-</LinearLayout>
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+
+        <EditText
+            android:id="@+id/main_edittext_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Entrer votre prénom 😄" />
+
+        <Button
+            android:id="@+id/main_button_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:text="Commencer la partie"
+            android:textSize="20sp"
+            android:backgroundTint="#393939"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

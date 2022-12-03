@@ -1,10 +1,12 @@
-package com.example.quizz;
+package com.example.quizz.Game;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.quizz.R;
 
 public class GameActivity extends AppCompatActivity {
 
